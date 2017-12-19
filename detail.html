@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Detail</title>
+    <link rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header class="toolbar header-detail">
+        <button class="btn btn-header"><i class="fa fa-arrow-left"></i></button>
+        <button class="btn btn-header right2"><i class="fa fa-pencil"></i></button>
+        <button class="btn btn-header right"><i class="fa fa-ellipsis-h"></i></button>
+    </header>
+
+    <section class="container container-detail">
+        <div class="detail">
+            <div class="img" style="text-align: center; line-height:214px;">
+                Image dimesion: 3:2
+            </div>
+            <div class="bottom">
+
+            </div>
+            <button class="btn flt-btn"><i class="fa fa-star"></i></button>
+        </div>
+
+        <div class="list-item">
+            <div class="avatar">
+
+            </div>
+            <div class="content">
+                <p class="row1">Brunch this weekend</p>
+                <p class="row2">
+                    <span class="sub">Ali Connors</span>
+                    <span> - I'll be in your neighborhood this weekend. Welcome to my house.</span>
+                </p>
+            </div>
+        </div>
+        <div class="list-item">
+            <div class="avatar">
+
+            </div>
+            <div class="content">
+                <p class="row1">Summer BBQ</p>
+                <p class="row2">
+                    <span class="sub">to Alex, Scott, Jennifer</span>
+                    <span > - Wish I could cook.</span>
+                </p>
+            </div>
+        </div>
+        <div class="list-item">
+            <div class="avatar">
+
+            </div>
+            <div class="content">
+                <p class="row1">Oui oui</p>
+                <p class="row2">
+                    <span class="sub">Sandra Adams</span>
+                    <span> - Do you have Paris recoasdf, asdf</span>
+                </p>
+            </div>
+        </div>
+        <div class="list-item">
+            <div class="avatar">
+
+            </div>
+            <div class="content">
+                <p class="row1">Brunch this weekend</p>
+                <p class="row2">
+                    <span class="sub">Ali Connors</span>
+                    <span> - I'll be in your neighborhood this weekend. Welcome to my house.</span>
+                </p>
+            </div>
+        </div>
+        <div class="list-item">
+            <div class="avatar">
+
+            </div>
+            <div class="content">
+                <p class="row1">Summer BBQ</p>
+                <p class="row2">
+                    <span class="sub">to Alex, Scott, Jennifer</span>
+                    <span > - Wish I could cook.</span>
+                </p>
+            </div>
+        </div>
+        <div class="list-item">
+            <div class="avatar">
+
+            </div>
+            <div class="content">
+                <p class="row1">Oui oui</p>
+                <p class="row2">
+                    <span class="sub">Sandra Adams</span>
+                    <span> - Do you have Paris recoasdf, asdf</span>
+                </p>
+            </div>
+        </div>
+        <div class="list-item">
+            <div class="avatar">
+
+            </div>
+            <div class="content">
+                <p class="row1">Oui oui</p>
+                <p class="row2">
+                    <span class="sub">Sandra Adams</span>
+                    <span> - Do you have Paris recoasdf, asdf</span>
+                </p>
+            </div>
+        </div>
+        <div class="list-item">
+            <div class="avatar">
+
+            </div>
+            <div class="content">
+                <p class="row1">Oui oui</p>
+                <p class="row2">
+                    <span class="sub">Sandra Adams</span>
+                    <span> - Do you have Paris recoasdf, asdf</span>
+                </p>
+            </div>
+        </div>
+        
+    </section>
+
+    <script src="libs/jquery/jquery.3.2.1.min.js"></script>
+    <script>
+        // Scroll
+        $(window).scroll(function (event) {
+
+            // Header Scroll Transparent
+            // #E2ECF5(226,236,245) -> Transparent
+            var winPos = $(window).scrollTop();
+            var finPos = 100;
+
+            if (winPos <= finPos) {
+                $('header').css('background-color', 'rgba(226,236,245,' + winPos / finPos + ')');
+            } else {
+                $('header').css('background-color', 'rgba(226,236,245,1)');
+            }
+        });
+    </script>
+</body>
+</html>

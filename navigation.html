@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navigation</title>
+    <link rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header class="toolbar">
+        <button class="btn btn-header" id="nav"><i class="fa fa-bars"></i></button>
+        <h2 class="header-title">Inbox</h2>
+        <button class="btn btn-header right"><i class="fa fa-search"></i></button>
+    </header>
+
+    <!-- 滑動 未實現 -->
+    <aside class="nav">
+        <div class="intro">
+            <div class="avatar"></div>
+            <button class="btn btn-info">
+                heyfromjonathan@gmail.com
+                <i class="fa fa-caret-down"></i>
+            </button>
+        </div>
+
+        <div class="sep"></div>
+
+        <button class="btn item icon-left">
+            <i class="fa fa-inbox"></i>
+            <span>Inbox</span>
+        </button>
+        <button class="btn item icon-left">
+            <i class="fa fa-star"></i>
+            <span>Starred</span>
+        </button>
+        <button class="btn item icon-left">
+            <i class="fa fa-paper-plane"></i>
+            <span>Sent mail</span>
+        </button>
+        <button class="btn item icon-left">
+            <i class="fa fa-envelope-o"></i>
+            <span>Drafts</span>
+        </button>
+
+        <div class="sep"></div>
+        <div class="sep" style="border-top:solid 1px #E8E8E8;"></div>
+
+        <button class="btn item icon-right">All mail<i class="fa fa-info-circle"></i></button>
+        <button class="btn item icon-right">Trash<i class="fa fa-info-circle"></i></button>
+        <button class="btn item icon-right">Spam<i class="fa fa-info-circle"></i></button>
+        <button class="btn item icon-right">Follow up<i class="fa fa-info-circle"></i></button>
+    </aside>
+
+    <section class="container">
+        <div class="sub-title">
+            <h3>Today</h3>
+        </div>
+
+        <div class="list-item">
+            <div class="avatar">
+
+            </div>
+            <div class="content">
+                <p class="row1">Brunch this weekend</p>
+                <p class="row2">
+                    <span class="sub">Ali Connors</span>
+                    <span> - I'll be in your neighborhood this weekend. Welcome to my house.</span>
+                </p>
+            </div>
+        </div>
+        <div class="list-item">
+            <div class="avatar">
+
+            </div>
+            <div class="content">
+                <p class="row1">Summer BBQ</p>
+                <p class="row2">
+                    <span class="sub">to Alex, Scott, Jennifer</span>
+                    <span > - Wish I could cook.</span>
+                </p>
+            </div>
+        </div>
+        <div class="list-item">
+            <div class="avatar">
+
+            </div>
+            <div class="content">
+                <p class="row1">Oui oui</p>
+                <p class="row2">
+                    <span class="sub">Sandra Adams</span>
+                    <span> - Do you have Paris recoasdf, asdf</span>
+                </p>
+            </div>
+        </div>
+        <div class="list-item">
+            <div class="avatar">
+
+            </div>
+            <div class="content">
+                <p class="row1">Brunch this weekend</p>
+                <p class="row2">
+                    <span class="sub">Ali Connors</span>
+                    <span> - I'll be in your neighborhood this weekend. Welcome to my house.</span>
+                </p>
+            </div>
+        </div>
+        <div class="list-item">
+            <div class="avatar">
+
+            </div>
+            <div class="content">
+                <p class="row1">Summer BBQ</p>
+                <p class="row2">
+                    <span class="sub">to Alex, Scott, Jennifer</span>
+                    <span > - Wish I could cook.</span>
+                </p>
+            </div>
+        </div>
+        <div class="list-item">
+            <div class="avatar">
+
+            </div>
+            <div class="content">
+                <p class="row1">Oui oui</p>
+                <p class="row2">
+                    <span class="sub">Sandra Adams</span>
+                    <span> - Do you have Paris recoasdf, asdf</span>
+                </p>
+            </div>
+        </div>
+        <div class="list-item">
+            <div class="avatar">
+
+            </div>
+            <div class="content">
+                <p class="row1">Summer BBQ</p>
+                <p class="row2">
+                    <span class="sub">to Alex, Scott, Jennifer</span>
+                    <span > - Wish I could cook.</span>
+                </p>
+            </div>
+        </div>
+        <div class="list-item">
+            <div class="avatar">
+
+            </div>
+            <div class="content">
+                <p class="row1">Oui oui</p>
+                <p class="row2">
+                    <span class="sub">Sandra Adams</span>
+                    <span> - Do you have Paris recoasdf, asdf</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="mask"></section>
+
+    <script src="libs/jquery/jquery.3.2.1.min.js"></script>
+    <script>
+        // Load
+        $(function () {
+            $('#nav').click(function (){
+                $('.nav').show();
+                $('.mask').show();
+            })
+            $('.mask').click(function (){
+                $('.nav').hide();
+                $('.mask').hide();
+            })
+        });
+    </script>
+</body>
+</html>

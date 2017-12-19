@@ -1,0 +1,55 @@
+/* z-index
+float button  10
+header        100
+mask          1000
+nav           1001
+*/
+
+.btn { background: none; border: solid 0 transparent;}
+
+header { position: fixed; top: 0; z-index: 100;}
+.toolbar { width: 100%; height: 56px; background-color: #ECECEC;}
+.header-title { font-size: 18px; color: #4C4C4C; display: inline-block; line-height: 56px; margin-left: 48px; }
+.btn-header { position: absolute; top:0; left:0; width: 48px; height: 56px; line-height: 56px; font-size: 18px; color: #818181;}
+.btn-header.right { left: initial; right:0;}
+.btn-header.right2 { left: initial; right:48px;}
+
+.container { width: 100%; margin-top: 56px;}
+
+.mask { position: fixed; top: 0; left: 0; bottom: 0; right: 0; background-color: rgba(0,0,0,.5); z-index: 1000;}
+
+/* list */
+.sub-title { width: 100%; height: 48px;}
+.sub-title h3 { font-size: 14px; line-height: 48px; color: #818181; margin-left: 16px;}
+
+.list-item { width: 100%; height: 72px; position: relative; background-color: #FAFAFA;}
+.list-item .avatar { width: 40px; height: 40px;  position: absolute; top: 16px; left: 16px; background-color: #4C4C4C; border-radius: 40px;}
+.list-item .content { padding: 16px; padding-left: 72px;}
+.list-item .content .row1 { font-size: 16px; font-weight: bold; line-height: 1.4; color: #4C4C4C; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.list-item .content .row2 { font-size: 14px; font-weight: bold; line-height: 1.4; color: #CCCCCC; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.list-item .content .row2 .sub { font-weight: normal; color: #3B3B3B;}
+
+
+/* detail */
+.header-detail { background-color: #E2ECF5;}
+.container.container-detail { margin-top: 0;}
+
+.detail { width: 100%; position: relative;}
+.detail .img { width: 320px; height: 214px; background-color: #E2ECF5;}
+.detail .bottom  { height: 28px; background-color: #FAFAFA; box-shadow: 0 -2px 5px #CCCCCC; margin-top: -28px;}
+.detail .flt-btn { position: absolute; bottom: 0; right: 16px; width: 56px; height: 56px; background-color: #fff; border-radius: 56px; color: #818181; font-size: 18px; box-shadow: 0 5px 5px #CCCCCC; z-index: 10;}
+
+/* navigation */
+.nav { width: 280px; height: 100%; background-color: #FAFAFA; position: fixed; top:0; left: 0; z-index: 1001;}
+
+.nav .sep { width: 100%; height: 8px; background-color: #FAFAFA;}
+
+.nav .intro { height: 158px; background-color: #E2ECF5; position: relative; border-bottom: solid 1px #D5DCE4;}
+.nav .intro .avatar { position: absolute; top: 16px; left: 16px; width:72px; height: 72px; background-color: #4C4C4C; border-radius: 72px;}
+.nav .intro .btn-info { position: absolute; bottom: 0; width: 100%; height: 48px; background-color:transparent; font-size: 14px; font-weight: bold; color: #4C4C4C; text-align: left; padding: 0 16px;}
+.nav .intro .btn-info i { float: right;}
+
+.nav .item { width: 100%; height: 48px; background-color: #FAFAFA; line-height: 48px; font-size: 16px; font-weight: bold; text-align: left; padding: 0 16px;}
+.nav .item span { margin-left: 32px;}
+.nav .item i { font-size: 20px; color: #818181;}
+.nav .item.icon-right i { float: right; color: #CCCCCC; line-height: 48px;}
